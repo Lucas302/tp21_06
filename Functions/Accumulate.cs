@@ -6,14 +6,19 @@ namespace SuperBASIC.Functions
 {
 	class Accumulate : IFunction
 	{
+		static public float Execute(int start, int end)
+        {
+			float total = 0;
+			for (int i = start; i <= end; i++)
+			{
+				total += Memory.memory[i];
+			}
+			return total;
+		}
+
 		float IFunction.Apply(List<BasicNumber> arguments)
 		{
-			float total = 0;
-			for (int i = (int)arguments[0]; i <= arguments[1]; i++)
-            {
-				total += Memory.memory[i];
-            }
-			return total;
+			return Execute((int)arguments[0], (int)arguments[1]);
 		}
 	}
 }

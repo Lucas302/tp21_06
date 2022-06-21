@@ -31,7 +31,9 @@ namespace SuperBASIC
 				lib.AddFunction(new Functions.CylinderVol(), 2, "CYLINDER_VOL");
 				lib.AddFunction(new Functions.SphereVol(), 2, "SPHERE_VOL");
 				lib.AddFunction(new Functions.Gratio(), 0, "GRATIO");
-				lib.AddFunction(new Functions.Tan(), 1, "SIN");
+				lib.AddFunction(new Functions.Tan(), 1, "TAN");
+				lib.AddFunction(new Functions.Accumulate(), 2, "ACCUMULATE");
+				lib.AddFunction(new Functions.Average(), 2, "AVERAGE");
 
 				Runtime r = new Runtime(lib);
 				if (args.Length <= 1)
