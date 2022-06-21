@@ -22,7 +22,16 @@ namespace SuperBASIC
 				lib.AddFunction(new Functions.Goto(), 1, "GOTO");
 				lib.AddFunction(new Functions.Pi(), 0, "PI");
 				lib.AddFunction(new Functions.Euler(), 0, "EULER");
-				lib.AddFunction(new Functions.Arcsin(), 0, "ARCSIN");
+				lib.AddFunction(new Functions.Arcsin(), 1, "ARCSIN");
+				lib.AddFunction(new Functions.Sin(), 1, "SIN");
+				lib.AddFunction(new Functions.Cos(), 1, "COS");
+				lib.AddFunction(new Functions.Acos(), 1, "COS");
+				lib.AddFunction(new Functions.SolveLinear(), 3, "SOLVE_LINEAR");
+				lib.AddFunction(new Functions.Rem(), 2, "REM");
+				lib.AddFunction(new Functions.CylinderVol(), 2, "CYLINDER_VOL");
+				lib.AddFunction(new Functions.SphereVol(), 2, "SPHERE_VOL");
+				lib.AddFunction(new Functions.Gratio(), 0, "GRATIO");
+				lib.AddFunction(new Functions.Tan(), 1, "SIN");
 
 				Runtime r = new Runtime(lib);
 				if (args.Length <= 1)
