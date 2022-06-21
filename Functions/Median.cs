@@ -8,7 +8,7 @@ namespace SuperBASIC.Functions
 	{
 		float IFunction.Apply(List<BasicNumber> arguments)
 		{
-			return (float)Math.Sin(arguments[0]);
+			return QuickSelect.Execute((int)arguments[0], (int)arguments[1], (int)arguments[1] - (int)arguments[0]);
 		}
 	}
 }
