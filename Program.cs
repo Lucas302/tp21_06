@@ -34,6 +34,7 @@ namespace SuperBASIC
 				lib.AddFunction(new Functions.Tan(), 1, "TAN");
 				lib.AddFunction(new Functions.Accumulate(), 2, "ACCUMULATE");
 				lib.AddFunction(new Functions.Average(), 2, "AVERAGE");
+				lib.AddFunction(new Functions.Partition(), 2, "PARTITION");
 
 				Runtime r = new Runtime(lib);
 				if (args.Length <= 1)

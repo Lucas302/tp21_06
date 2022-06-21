@@ -22,7 +22,7 @@ namespace SuperBASIC.Functions
 	{
 		float IFunction.Apply(List<BasicNumber> arguments)
 		{
-			return (float)9.80665;
+			return (float)(1+(Math.Sqrt(5))/2);
 		}
 	}
 }
