@@ -30,7 +30,7 @@ namespace SuperBASIC.Functions
 	}
 
 
-	class MemoryLoad : IFunction
+	public class MemoryLoad : IFunction
 	{
 		float IFunction.Apply(List<BasicNumber> arguments)
 		{
@@ -42,7 +42,7 @@ namespace SuperBASIC.Functions
 			throw new Memory.BadMemoryAccess("Could not access requested memory");
 		}
 	}
-	class MemoryStore : IFunction
+	public class MemoryStore : IFunction
 	{
 		float IFunction.Apply(List<BasicNumber> arguments)
 		{

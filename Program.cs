@@ -58,3 +58,27 @@ namespace SuperBASIC
 		}
 	}
 }
+//MEMSTORE 1 0
+//MEMSTORE 0 10
+//WHILE MEMLOAD 0
+//MEMLOAD 0
+//ADD $ -1
+//MEMSTORE 0 $
+//MEMLOAD 1
+//ADD $ 1
+//MEMSTORE 1 $
+//PRINT M1
+//WEND
+
+//Sin test
+//MEMSTORE 0 1
+//SIN M0
+//PRINT $
+
+//Accumulate test
+//MEMSTORE 0 1,5
+//MEMSTORE 1 2
+//MEMSTORE 2 4
+//MEMSTORE 3 0
+//ACCUMULATE 0 3
+//PRINT $
