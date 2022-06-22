@@ -44,7 +44,7 @@ namespace SuperBASIC
 				Runtime r = new Runtime(lib);
 				if (args.Length <= 1)
 				{
-					r.OpenFile(Directory.GetCurrentDirectory() + "\\Test.basic");
+					r.OpenFile(Directory.GetCurrentDirectory() + "\\TestPartition.basic");
 				} 
 				else
 				{

@@ -8,7 +8,7 @@ namespace SuperBASIC.Functions
 	{
 		float IFunction.Apply(List<BasicNumber> arguments)
 		{
-			float count = arguments[1] - arguments[0];
+			float count = arguments[1] - arguments[0] + 1;
 			float total = Accumulate.Execute((int)arguments[0], (int) arguments[1]);
 			float average = total / count;
 

@@ -26,7 +26,7 @@ namespace SuperBASIC.Functions
 				while (Memory.memory[b] > pivot);
 				if (a >= b)
 				{
-					return b;
+					return b + 1;//à vérifier
 				}
 				var temp = Memory.memory[a];
 				Memory.memory[a] = Memory.memory[b];
