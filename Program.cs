@@ -25,7 +25,7 @@ namespace SuperBASIC
 				lib.AddFunction(new Functions.Arcsin(), 1, "ARCSIN");
 				lib.AddFunction(new Functions.Sin(), 1, "SIN");
 				lib.AddFunction(new Functions.Cos(), 1, "COS");
-				lib.AddFunction(new Functions.Acos(), 1, "COS");
+				lib.AddFunction(new Functions.Acos(), 1, "ACOS");
 				lib.AddFunction(new Functions.SolveLinear(), 3, "SOLVE_LINEAR");
 				lib.AddFunction(new Functions.Rem(), 2, "REM");
 				lib.AddFunction(new Functions.CylinderVol(), 2, "CYLINDER_VOL");
@@ -38,6 +38,7 @@ namespace SuperBASIC
 				lib.AddFunction(new Functions.QuickSelect(), 3, "QUICK_SELECT");
 				lib.AddFunction(new Functions.Median(), 2, "MEDIAN");
 				lib.AddFunction(new Functions.StalinSort(), 2, "STALIN_SORT");
+				lib.AddFunction(new Functions.Sort(), 2, "SORT");
 
 				Runtime r = new Runtime(lib);
 				if (args.Length <= 1)
