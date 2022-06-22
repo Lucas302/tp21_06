@@ -39,6 +39,7 @@ namespace SuperBASIC
 				lib.AddFunction(new Functions.Median(), 2, "MEDIAN");
 				lib.AddFunction(new Functions.StalinSort(), 2, "STALIN_SORT");
 				lib.AddFunction(new Functions.Sort(), 2, "SORT");
+				lib.AddFunction(new Functions.M5(), 5, "M5");
 
 				Runtime r = new Runtime(lib);
 				if (args.Length <= 1)
